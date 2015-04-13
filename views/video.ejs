@@ -16,16 +16,18 @@
     <script src="/js/libs/video.js"></script>
     <script>
       videojs.options.flash.swf = "/swf/video-js.swf"
-    </script>    
+      console.log('waaat');
+    </script>
   </head>
 
   <body>
 
+    <p>%= videoURL %</p>
     <video id="theVideo" class="video-js vjs-default-skin" controls preload="auto" width="385" height="264">
      <source src="<%= videoURL %>" type='video/mp4' />
-     <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+     <track kind="subtitles" src="./princessbride.vtt" srclang="en" label="English" default>
     </video>
-  
+
     <script>
       $(document).ready(function(){
         // Adjusting video width

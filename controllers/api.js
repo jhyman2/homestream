@@ -7,10 +7,8 @@
 var _ = require('underscore');
 
 var locations = [
-  '/Users/eperez/apps/homestream/public/videos', 
-  '/Users/eperez/videos',
-  '/Users/eperez/Movies'
-];
+  '/Users/jhyman/apps/homestream/public/videos'
+  ];
 
 // Locations
 app.get('/api/locations', function(req, res, next){
