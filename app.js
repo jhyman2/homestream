@@ -163,9 +163,9 @@ app.get('/api/files', function(req, res, next){
 
 /**
 *	Initializing Server
-*/ 
-var server = app.listen(46005, function () {
-  console.log('App listening at http://localhost:46005');
+*/
+var server = app.listen(45032, function () {
+  console.log('App listening at http://localhost:45032');
 });
 
 module.exports = server;
